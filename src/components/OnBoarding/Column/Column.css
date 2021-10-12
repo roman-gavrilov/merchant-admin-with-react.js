@@ -1,0 +1,50 @@
+.MuiListItem-container {
+    margin: 3px;
+    /* margin-top: 0; */
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.items {
+    position: relative;
+}
+
+.linkSelected > .MuiListItem-container {
+    background-color: #ebe8e8;
+}
+
+.items > .MuiListItem-container {
+    /* background-color: #dad6d6; */
+}
+
+.itemSelected > .MuiListItem-container,
+.areaSelected > .MuiListItem-container {
+    /* background-color: rgb(173, 169, 169); */
+    background-color: #dad6d6;
+}
+
+.contextMenu {
+    height: 36px;
+    position: absolute;
+    z-index: 5;
+    /* right: 0;
+    bottom: -16px; */
+    /* top: 303px; */
+    /* left: 360px; */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+.hideContextMenu {
+    transform: scale(0);
+}
+
+.contextMenu > .MuiList-padding {
+    padding: 0;
+}
+.contextMenu > .MuiList-padding > .MuiListItem-gutters {
+    padding: 4px 0;
+}
